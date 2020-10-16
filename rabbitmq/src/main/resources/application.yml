@@ -1,0 +1,26 @@
+spring:
+  rabbitmq:
+    virtual-host: /
+    username: guest
+    password: guest
+    port: 5672
+    host: 127.0.0.1
+    # 2.2.1.release用publisher-confirm-type
+    #rabbitmq客户端发送消息首先发送的交换器exchange，然后通过路由键routingKey和bindingKey比较判定需要将消息发送到那个队列queue上；
+    #在这个过程有两个地方消息可能丢失，第一消息发送到交换器exchange的过程，第二消息从交换器exchange发送到队列queue的过程；
+    # publisher-confirms: true
+#    listener:
+#      simple:
+#        acknowledge-mode: MANUAL
+
+
+# Swagger界面内容配置
+swagger:
+  title: API接口文档
+  description: Api Documentation
+  version: 1.0.0
+  termsOfServiceUrl: https://www.baidu.com/
+  contact:
+    name: test
+    url: https://www.baidu.com/
+    email: xxx@163.com
