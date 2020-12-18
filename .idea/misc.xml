@@ -6,7 +6,20 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/rabbitmq/pom.xml" />
+        <option value="$PROJECT_DIR$/threadpool/pom.xml" />
+        <option value="$PROJECT_DIR$/proxy-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/redis-distribute/pom.xml" />
+        <option value="$PROJECT_DIR$/thought/pom.xml" />
+        <option value="$PROJECT_DIR$/thoughtworks-train/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka/pom.xml" />
+        <option value="$PROJECT_DIR$/lambda/pom.xml" />
+        <option value="$PROJECT_DIR$/ant-exam/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/thoughtworks-train/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">

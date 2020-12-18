@@ -4,6 +4,7 @@ import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,6 +28,10 @@ public class TestController {
     @Qualifier("getRedissionClient")
     @Autowired
     private RedissonClient redissonClient;
+
+    @Value("${aa.bb}")
+    private String ss;
+
 
     //通过setnx设置分布式锁
     @GetMapping("/lock/test")

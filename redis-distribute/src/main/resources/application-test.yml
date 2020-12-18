@@ -1,0 +1,16 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: redis
+  redis:
+    # ?????
+    cluster:
+      nodes: 172.15.60.205:7001,172.15.60.205:7002,172.15.60.206:7003,172.15.60.206:7004,172.15.60.207:7005,172.15.60.207:7006
+      max-redirects: 5
+    password: 18Mhero
+    timeout: 3000
+
+
+aa:
+  bb: sdsdf

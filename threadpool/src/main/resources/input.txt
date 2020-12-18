@@ -1,0 +1,10 @@
+distance_between_towns;A;B;C
+distance_between_towns;A;D
+distance_between_towns;A;D;C
+distance_between_towns;A;E;B;C;D
+distance_between_towns;A;E;D
+number_trips_with_max_stops;C;C;3
+number_trips_with_special_stops;A;C;4
+shortest_path_between_two_towns;A;C
+shortest_path_between_two_towns;B;B
+number_trips_with_max_distance;C;C;30

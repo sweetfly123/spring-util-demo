@@ -7,14 +7,37 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="thought" />
+        <module name="lambda" />
+        <module name="kafka" />
+        <module name="proxy-demo" />
+        <module name="thoughtworks-train" />
+        <module name="threadpool" />
         <module name="rabbitmq" />
-        <module name="spring-util-demo" />
+        <module name="ant-exam" />
+      </profile>
+      <profile name="Annotation profile for redis-distribute" enabled="true">
+        <sourceOutputDir name="redisdis/resource/generated-sources/annotations" />
+        <sourceTestOutputDir name="redisdis/resource/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="redis-distribute" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="thoughtworks-train" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ant-exam" options="-parameters" />
+      <module name="kafka" options="-parameters" />
+      <module name="lambda" options="-parameters" />
+      <module name="proxy-demo" options="-parameters" />
       <module name="rabbitmq" options="-parameters" />
+      <module name="redis-distribute" options="-parameters" />
+      <module name="thought" options="-parameters" />
+      <module name="thoughtworks-train" options="-parameters" />
+      <module name="threadpool" options="-parameters" />
     </option>
   </component>
 </project>
